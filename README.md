@@ -49,10 +49,6 @@ Get the latest version of MSB Status Optimizer:
   </a>
 </p>
 
-**Direct Download – Version 1.0.0**
-
-[Download MSB Status Optimizer Setup](https://github.com/MANOX2004/MSB-Status-Optimizer/releases/download/v1.0.0/MSBStatusOptimizerSetup-1.0.0.exe)
-
 ## 💻 System Requirements
 
 - Windows 10 or Windows 11
