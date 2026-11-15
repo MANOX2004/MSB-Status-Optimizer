@@ -1,226 +1,157 @@
+
 # MSB Status Optimizer
 
-**Prepare your videos for WhatsApp Status with ease.**
+<p align="center">
+  <strong>Optimize your videos for WhatsApp Status — easily and efficiently.</strong>
+</p>
 
-MSB Status Optimizer is a Windows desktop application designed to prepare video files as MP4 for WhatsApp Status. Choose automatic size optimization or set your own target file size while keeping video quality in mind.
+<p align="center">
+  A simple Windows application that helps prepare your videos as MP4 files for WhatsApp Status.
+</p>
 
-Video processing happens locally on your computer. Your videos are not uploaded to WhatsApp or any external server by this application.
+<p align="center">
+  <img src="https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-blue?style=for-the-badge&logo=windows" alt="Windows">
+  <img src="https://img.shields.io/badge/Framework-.NET%2010-purple?style=for-the-badge&logo=dotnet" alt=".NET 10">
+  <img src="https://img.shields.io/badge/Language-C%23-239120?style=for-the-badge&logo=csharp" alt="C#">
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="MIT License">
+</p>
+
+---
+
+## 📸 Application Preview
+
+<p align="center">
+  <img src="./screenshot%20(1).png" alt="MSB Status Optimizer - Screenshot 1" width="48%">
+  <img src="./screenshot%20(2).png" alt="MSB Status Optimizer - Screenshot 2" width="48%">
+</p>
 
 ---
 
 ## ✨ Features
 
-- **Automatic Size Optimization** – Automatically prepares videos for WhatsApp Status.
-- **Smart MP4 Processing** – Preserves compatible H.264/AAC MP4 streams whenever possible.
-- **High-Quality Encoding** – Other videos are encoded when stream preservation is not possible.
-- **Custom Target Size** – Choose an output size between 1 MB and 100 MB.
-- **Two-Pass Encoding** – Uses two-pass H.264 encoding in custom target size mode.
-- **Bilingual Interface** – Switch between English and Sinhala.
-- **Saved Language Preference** – Your selected language is remembered.
-- **Update Notifications** – Checks GitHub Releases for newer versions when the application opens.
-
----
+- **WhatsApp Status Optimization** – Prepare videos for WhatsApp Status.
+- **Automatic Size Optimization** – Automatically optimize videos for a suitable output size.
+- **Custom Target Size** – Set your preferred output size from 1 MB to 100 MB.
+- **High-Quality Encoding** – Uses H.264 video encoding for compatible output.
+- **MP4 Output** – Export optimized videos in MP4 format.
+- **Two-Pass Encoding** – Uses two-pass encoding for custom target-size processing.
+- **English & Sinhala Support** – Switch between English and Sinhala.
+- **Preference Saving** – Remembers your selected language.
+- **Update Notifications** – Checks GitHub Releases for newer versions when the application starts.
 
 ## 📥 Download
 
-### Latest Installer – Version 1.0.0
+Get the latest version of MSB Status Optimizer:
 
-**[Download MSB Status Optimizer (.exe)](https://github.com/MANOX2004/MSB-Status-Optimizer/releases/download/v1.0.0/MSBStatusOptimizerSetup-1.0.0.exe)**
+<p align="center">
+  <a href="https://github.com/MANOX2004/MSB-Status-Optimizer/releases">
+    <img src="https://img.shields.io/badge/Download-Latest%20Release-28a745?style=for-the-badge&logo=github" alt="Download Latest Release">
+  </a>
+</p>
 
-### System Requirements
+**Direct Download – Version 1.0.0**
 
-| Requirement | Details |
-|---|---|
-| Operating System | Windows 10 / Windows 11 |
-| Architecture | 64-bit (x64) |
-| Framework | .NET 10 |
-| Video Processing | FFmpeg and FFprobe |
-| Output Format | MP4 |
+[Download MSB Status Optimizer Setup](https://github.com/MANOX2004/MSB-Status-Optimizer/releases/download/v1.0.0/MSBStatusOptimizerSetup-1.0.0.exe)
 
-[View All Releases](https://github.com/MANOX2004/MSB-Status-Optimizer/releases)
+## 💻 System Requirements
 
----
+- Windows 10 or Windows 11
+- 64-bit (x64) operating system
+- FFmpeg
+- FFprobe
 
-## 🚀 Installation
+## ⚙️ Installation
 
-Follow these steps to install MSB Status Optimizer.
+1. Download the installer from the [Releases](https://github.com/MANOX2004/MSB-Status-Optimizer/releases) page.
+2. Run `MSBStatusOptimizerSetup-1.0.0.exe`.
+3. Complete the installation.
+4. Make sure FFmpeg and FFprobe are installed and accessible on your system.
+5. Launch MSB Status Optimizer.
 
-### 1. Download the Installer
+### FFmpeg and FFprobe Setup
 
-Download the latest setup file:
+MSB Status Optimizer requires FFmpeg and FFprobe to process and inspect video files.
 
-[MSBStatusOptimizerSetup-1.0.0.exe](https://github.com/MANOX2004/MSB-Status-Optimizer/releases/download/v1.0.0/MSBStatusOptimizerSetup-1.0.0.exe)
+They must be installed separately. They are not bundled with the application.
 
-### 2. Install the Application
+Make sure both tools are available through your system PATH, or configure them as required by your installation.
 
-- Open the downloaded installer.
-- Follow the installation instructions.
-- Launch MSB Status Optimizer after installation.
+- [FFmpeg Official Website](https://ffmpeg.org/)
+- [FFmpeg Downloads](https://ffmpeg.org/download.html)
 
-### 3. Install FFmpeg and FFprobe
+## 🚀 How to Use
 
-MSB Status Optimizer requires two external tools:
+1. Open MSB Status Optimizer.
+2. Select the video you want to optimize.
+3. Choose your preferred optimization mode.
+4. For automatic optimization, use the automatic-size option.
+5. To target a specific file size, select custom size and enter a value between 1 MB and 100 MB.
+6. Start the optimization process.
+7. Save the resulting MP4 video.
 
-- **FFmpeg** – Handles video encoding and processing.
-- **FFprobe** – Reads video information and properties.
-
-> ⚠️ Important: FFmpeg and FFprobe are not bundled with the application. They must be installed separately and made accessible to the application.
-
----
-
-## 🎬 How to Use
-
-Preparing a video is straightforward.
-
-### Step 1 – Select Your Video
-
-Open MSB Status Optimizer and select the video file you want to prepare for WhatsApp Status.
-
-### Step 2 – Choose the Output Location
-
-Select where you want the processed MP4 video to be saved.
-
-### Step 3 – Choose an Optimization Mode
-
-MSB Status Optimizer provides two processing modes.
-
-### Automatic Size Mode
-
-- Select Automatic Size mode.
-- The application checks whether the video can be preserved without re-encoding.
-- Compatible H.264/AAC MP4 streams are preserved whenever possible.
-- Other videos are encoded at high quality.
-
-### Custom Target Size Mode
-
-- Select Custom Target Size mode.
-- Enter your preferred output size.
-- Choose a target between **1 MB and 100 MB**.
-- The application uses two-pass H.264 encoding to target the selected file size.
-
-### Step 4 – Process Your Video
-
-Start processing and allow the application to prepare your MP4 video.
-
-### Step 5 – Use Your Video
-
-Once processing is complete, locate the saved MP4 file and upload it to your WhatsApp Status.
-
----
+Your optimized video is now ready to be used for WhatsApp Status.
 
 ## 🔄 Update Notifications
 
-MSB Status Optimizer checks GitHub Releases for a newer version whenever the application opens.
+MSB Status Optimizer checks the GitHub Releases page when the application starts.
 
-If an update is available, you can choose:
+When a newer version is available:
 
-- **Update** – Opens the GitHub Releases page so you can download the newer version.
-- **Later** – Dismisses the notification and continues using the current version.
+- **Update** – Opens the latest release page.
+- **Later** – Dismisses the update notification.
 
-Updates are **not installed automatically**. You remain in control of when to download and install a newer version.
-
-[Check Available Releases](https://github.com/MANOX2004/MSB-Status-Optimizer/releases)
-
----
+The application does not automatically download or install updates.
 
 ## 🔒 Privacy
 
 Your privacy matters.
 
-MSB Status Optimizer processes video files locally on your Windows computer.
-
-- Videos are not uploaded to WhatsApp by the application.
-- Videos are not uploaded to external servers by the application.
-- Video processing takes place on your local computer.
-
-The application only checks GitHub Releases for newer versions when it opens.
-
----
+- Video processing is performed locally on your computer.
+- Your videos are not uploaded to WhatsApp or any external server by this application.
+- The application checks GitHub Releases for update information when it starts.
+- Your selected language preference is saved locally.
 
 ## ⚠️ Important Notes & Limitations
 
-Please keep the following points in mind:
-
-- WhatsApp may re-encode videos after you upload them.
-- The final playback quality on WhatsApp may differ from the processed video.
-- Custom target size mode involves a trade-off between file size and video quality.
-- A smaller target size may require more compression and can reduce visual quality.
-- Automatic Size mode preserves compatible H.264/AAC MP4 streams when possible. Other videos require encoding.
 - FFmpeg and FFprobe must be installed separately.
-
-**Note:** MSB Status Optimizer prepares your video before uploading. It cannot control how WhatsApp processes or displays the uploaded video.
-
----
+- Automatic-size optimization may preserve compatible H.264/AAC MP4 streams when possible.
+- Videos that cannot be preserved in their existing format may be re-encoded.
+- Custom target-size processing uses two-pass H.264 encoding.
+- The final output size may vary slightly depending on video content and encoding conditions.
+- WhatsApp may re-encode videos after uploading. Therefore, identical quality or completely lossless playback cannot be guaranteed.
 
 ## 🛠️ Troubleshooting
 
-If you encounter a problem, try the following checks.
+**FFmpeg or FFprobe not found**
 
-| Problem | What to Check |
-|---|---|
-| Application does not start | Check that your Windows installation meets the system requirements. |
-| FFmpeg not found | Make sure FFmpeg is installed and accessible to the application. |
-| FFprobe not found | Make sure FFprobe is installed and accessible to the application. |
-| Video processing fails | Check that the input video exists and can be accessed. |
-| Output file is not created | Check the output location and available disk space. |
-| Custom target size is not achieved | Check the selected target size and try a different target. |
-| Output quality is lower than expected | Consider using a larger target size or Automatic Size mode. |
-| Update notification does not appear | Check your internet connection and visit the Releases page manually. |
+Make sure FFmpeg and FFprobe are installed correctly and accessible through your system PATH.
 
-If the problem continues, please report it through the repository's Issues section.
+**Video processing fails**
 
-[Report a Problem on GitHub](https://github.com/MANOX2004/MSB-Status-Optimizer/issues)
+Check whether the input video is supported and verify that FFmpeg is working correctly.
 
----
+**Output file is larger or smaller than expected**
 
-## 🖼️ Screenshots
+Encoding results can vary depending on the video content. Custom target-size mode uses two-pass encoding to help reach the requested size.
 
-Application screenshots will be added here.
+**Update notification does not appear**
 
-> [Add screenshot – Main Application Window]
-
-> [Add screenshot – Automatic Size Mode]
-
-> [Add screenshot – Custom Target Size Mode]
-
----
-
-## 💻 Technology
-
-| Component | Technology |
-|---|---|
-| Programming Language | C# |
-| Desktop Framework | WPF |
-| Runtime | .NET 10 |
-| Video Processing | FFmpeg |
-| Video Information | FFprobe |
-| Platform | Windows 10/11 (x64) |
-
----
+Make sure your computer has an active internet connection and try launching the application again.
 
 ## 📄 License
 
-MSB Status Optimizer is licensed under the **MIT License**, subject to the repository's LICENSE file.
+MSB Status Optimizer is intended to be distributed under the MIT License, subject to the repository's `LICENSE` file.
 
-See the [LICENSE](LICENSE) file for license details.
-
----
-
-## 🔗 Links
-
-- **GitHub Repository:** [MSB Status Optimizer](https://github.com/MANOX2004/MSB-Status-Optimizer)
-- **Download:** [Latest Installer](https://github.com/MANOX2004/MSB-Status-Optimizer/releases/download/v1.0.0/MSBStatusOptimizerSetup-1.0.0.exe)
-- **All Releases:** [GitHub Releases](https://github.com/MANOX2004/MSB-Status-Optimizer/releases)
-- **Issues & Support:** [GitHub Issues](https://github.com/MANOX2004/MSB-Status-Optimizer/issues)
+See [LICENSE](LICENSE) for details.
 
 ---
 
 <p align="center">
-
-**MSB Status Optimizer**
-
-*Simple. Efficient. Local Video Processing.*
-
-Made for preparing videos for WhatsApp Status.
-
+  <strong>MSB Status Optimizer</strong>
+  <br>
+  Made for easy WhatsApp Status video optimization.
+  <br><br>
+  <a href="https://github.com/MANOX2004/MSB-Status-Optimizer">GitHub Repository</a>
+  ·
+  <a href="https://github.com/MANOX2004/MSB-Status-Optimizer/releases">Releases</a>
 </p>
